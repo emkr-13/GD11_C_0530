@@ -51,10 +51,10 @@ class AddEditActivity : AppCompatActivity() {
 
         setExposedDropDownMenu()
 
-        val btnCancel = findViewById<Button>(R.id.btn_cancel)
+        val btnCancel = findViewById<Button>(R.id.btn_cancle)
         btnCancel.setOnClickListener {finish()}
         val btnSave = findViewById<Button>(R.id.btn_save)
-        val tvTitle = findViewById<TextView>(R.id.tv_tittle)
+        val tvTitle = findViewById<TextView>(R.id.tv_title)
         val id = intent.getLongExtra("id", -1)
         if(id==-1L) {
             tvTitle.setText("Tambah Mahasiswa")
